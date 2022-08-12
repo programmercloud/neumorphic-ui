@@ -7,14 +7,12 @@ body {
 
 .head {
   font-family: sans-serif;
-  color: white;
+  color: #fff;
   width: 90%;
   display: block;
   padding: 2em;
   background-color: #232931;
   border-radius: 8px;
-  display: flex;
-  flex-direction: row;
 }
 
 .flex {
@@ -25,15 +23,15 @@ body {
 
 .shadow {
   box-shadow: -2px -2px 8px 1px rgba(161, 161, 201, 0.2),
-    2px 2px 8px 1px rgba(0, 0, 0, 0.8);
+    2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .header {
   font-size: 28px;
   font-style: italic;
   display: flex;
-  flex: 1 1;
   text-align: left;
+  flex: 1 1;
   float: left;
 }
 
@@ -66,7 +64,7 @@ body {
 }
 
 .menu ul li:hover,
-.menu ul li.active {
+.menu ul li:active {
   background-color: #f73859;
   box-shadow: 2px 2px 8px 1px rgba(74, 24, 2, 0.8),
     inset -1px -1px 5px 1px rgba(255, 255, 255, 0.2),
@@ -119,12 +117,11 @@ body {
     display: inline-block;
   }
   .menu ul li > i {
-    margin-right: 0px;
+    margin-right: 0;
   }
   .section {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
   .person,
   .content {
